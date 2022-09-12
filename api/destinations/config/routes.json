@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/destinations",
+      "handler": "destinations.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/destinations/count",
+      "handler": "destinations.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/destinations/:id",
+      "handler": "destinations.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/destinations",
+      "handler": "destinations.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/destinations/:id",
+      "handler": "destinations.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/destinations/:id",
+      "handler": "destinations.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

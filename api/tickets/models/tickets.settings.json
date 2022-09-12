@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tickets",
+  "info": {
+    "name": "tickets",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "from": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "to": {
+      "type": "string",
+      "required": true
+    },
+    "personCount": {
+      "type": "integer",
+      "default": 1,
+      "required": true
+    },
+    "paymentMethod": {
+      "type": "enumeration",
+      "enum": [
+        "cash",
+        "esewa",
+        "qr",
+        "khalti",
+        "imepay"
+      ]
+    },
+    "discount": {
+      "type": "float",
+      "default": 0
+    },
+    "customerType": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "referenceToken": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "totalPrice": {
+      "type": "float",
+      "required": true
+    }
+  }
+}

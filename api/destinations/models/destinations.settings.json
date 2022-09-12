@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "destinations",
+  "info": {
+    "name": "destinations"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "price": {
+      "type": "float",
+      "required": true
+    }
+  }
+}

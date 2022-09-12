@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "customers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "price": {
+      "type": "float"
+    }
+  }
+}
